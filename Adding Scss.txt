@@ -1,0 +1,43 @@
+
+I remember long time ago you said you were looking how to add sass in your React project. If you run npm install --save-dev node-sass then add a style folder add your scss files and change app.css to app.scss and add @import "styles/main.scss". Then you can use your structure for pages, layouts, common and variables and import them to main. Check this tutorial 
+
+https://www.youtube.com/watch?v=U7dn-3OeJ3U
+http://www.hackingwithreact.com/read/1/23/creating-a-link-between-pages-in-react-router
+
+BREAK POINTS
+
+{
+  xs: '480px',
+  sm: '576px',
+  md: '768px',
+  lg: '992px',
+  xl: '1200px',
+  xxl: '1600px',
+}
+
+Links:
+
+<Anchor targetOffset="65">
+	<Link href="#" title="Home" />
+	<Link href="#about" title="About Us" />
+	<Link href="#features" title="Features" />
+	<Link href="#works" title="Our work" />
+	<Link href="#faq" title="FAQ" />
+	<Link href="#plans" title="Costs" />
+	<Link href="#contact" title="Contact Us" />   
+</Anchor>
+
+ReactDOM.render(
+  <Row>
+    <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }}>
+      Col
+    </Col>
+    <Col xs={{ span: 11, offset: 1 }} lg={{ span: 6, offset: 2 }}>
+      Col
+    </Col>
+    <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }}>
+      Col
+    </Col>
+  </Row>,
+  mountNode,
+);
