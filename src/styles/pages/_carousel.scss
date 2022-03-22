@@ -1,0 +1,65 @@
+// Home page
+
+// 1. Carousel
+.carousel {
+    background: url(/img/bg-carousel.jpg) no-repeat;
+    // background-position: 50% 100%;
+    background-size: cover;
+    height: 90vh;
+
+    & .ant-carousel,
+    & .ant-carousel div {
+        height:100%;
+
+        // Buttons
+        & .btn-carousel {
+            height:auto!important;
+            & .ant-btn-primary {
+                margin-right:10px;
+                background-color: $blue;
+                &:hover {
+                     background-color: $hoverblue;
+                }
+            }
+            & i {
+                margin-right:10px;
+            }
+        }
+    }
+    // Bullets 
+    & .slick-dots li button {
+        background-color:$black;
+    }
+    & .slick-dots li.slick-active button {
+        background-color: $blue;
+    }
+    // Content (Title & text)
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width:700px;
+
+        & h2 {
+            font-size:32px;
+        }
+        & p {
+            color:$gray;
+        }
+    }
+}
+@media only screen and (max-width:$breakpoint-mobile) {
+    .carousel {
+        & button {
+            margin:15px 15px 0 0!important;
+        }
+        & h2 {
+            font-size:24px!important;
+        }
+    }
+}
+// Video
+

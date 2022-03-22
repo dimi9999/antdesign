@@ -1,0 +1,45 @@
+// 4. How does it work
+.Works {
+    position:relative;
+    background:url(../../img/bg-works.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    &:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0, 0.5)
+    }
+    & p {
+        margin-bottom:0;
+        color:$white;
+    }
+    & .title {
+        position:relative;
+        margin-bottom:30px;
+        color:$white;
+        & h2 {
+            margin-bottom:10px;
+            color:$white;
+        }
+        & p {
+            margin-bottom: 30px;
+            color:$white;
+        }
+        &:after {
+            content:'';
+            width:50px;
+            height:3px;
+            background-color:$blue;
+            display:block;
+            margin:0 auto;
+        }
+    }
+}
+@media only screen and (max-width:$breakpoint-mobile) {
+
+}

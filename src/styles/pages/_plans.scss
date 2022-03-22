@@ -1,0 +1,61 @@
+// Plans
+.Plans {
+    background-color:$lightgray;
+    & .title {
+        position:relative;
+        margin-bottom:40px;
+        & h2 {
+            margin-bottom:10px;
+        }
+        & p {
+            margin-bottom: 30px;
+        }
+        &:after {
+            content:'';
+            width:50px;
+            height:3px;
+            background-color:$blue;
+            display:block;
+            margin:0 auto;
+        }
+
+    }
+    .ant-card-head-title {
+        font-size:20px;
+    }
+    .price {
+        font-size:30px;
+    }
+
+    .ant-list {
+        text-align: center;
+    }
+  
+    .ant-row > div:nth-child(2) .ant-list-item {
+        box-shadow: 0 0 12px 2px #f3f3f3;
+        transform: scale(1.1);
+        position: relative;
+        z-index: 1;
+    }
+    
+   .ant-card-head-title {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 400;
+    }
+  
+    .large {
+        font-size: 38px;
+        line-height: 1;
+        margin: 0 0 20px;
+    }
+  
+    .fab {
+        margin: 0 10px 0 0;
+    }
+  
+}
+
+@media only screen and (max-width:$breakpoint-mobile) {
+
+}

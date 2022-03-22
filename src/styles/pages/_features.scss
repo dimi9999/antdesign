@@ -1,0 +1,62 @@
+// 3. Features
+.Features {
+    background-color:$lightgray;
+    & .title {
+        position:relative;
+        margin-bottom:40px;
+        & h2 {
+            margin-bottom:10px;
+        }
+        & p {
+            margin-bottom: 30px;
+        }
+        &:after {
+            content:'';
+            width:50px;
+            height:3px;
+            background-color:$blue;
+            display:block;
+            margin:0 auto;
+        }
+    }
+    & .ant-card-bordered {
+        & .ant-card-cover {
+            height:250px;
+            overflow:hidden;
+        } 
+    }
+}
+
+// 4. How does it work
+.Works {
+    & p {
+        margin-bottom:0;
+    }
+    & .title {
+        position:relative;
+        margin-bottom:30px;
+        & h2 {
+            margin-bottom:10px;
+        }
+        & p {
+            margin-bottom: 30px;
+        }
+        &:after {
+            content:'';
+            width:50px;
+            height:3px;
+            background-color:$blue;
+            display:block;
+            margin:0 auto;
+        }
+    }
+}
+@media only screen and (max-width:$breakpoint-mobile) {
+    .Features {
+        & .ant-card-bordered {
+            & .ant-card-cover {
+                height:auto!important;
+            } 
+        }
+    }
+}

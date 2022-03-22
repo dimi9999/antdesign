@@ -1,0 +1,29 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/reset";
+@import "base/typography";
+@import "base/helpers";
+@import "base/display";
+
+@import "layouts/common";
+@import "layouts/header";
+@import "layouts/footer";
+
+// Pages
+@import "pages/index";
+@import "pages/about";
+@import "pages/contact";
+
+// Rest of pages
+@import "pages/pages";
+
+
+// Homepage parts
+@import "pages/carousel";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/features";
+@import "pages/works";
+@import "pages/faq";
+@import "pages/plans";
+@import "pages/contact";

@@ -1,0 +1,41 @@
+ // footer
+ footer {
+     text-align: center;
+     h6 {
+         font-size:20px;
+     }
+     address {
+         font-size:16px;
+     }
+     .logo {
+        & a {
+            font-size: 20px;
+        
+            & i {
+                flex:1;
+                font-size:24px;
+                color:$blue;
+                margin-right:15px;
+            }
+        }
+         
+    }
+    & i {
+            flex:1;
+            font-size:24px;
+            color:$blue;
+            margin-right:15px;
+    }  
+    .copyright {
+        padding:25px 0;
+        border-top:1px solid $lightgray;
+    }
+    .ant-back-top-icon {
+        background-color: $blue!important;
+        &:hover {
+            background-color:$black!important;
+            transition:0.3s ease-in all;
+        }
+    }
+    
+ }

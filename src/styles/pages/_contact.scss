@@ -1,0 +1,47 @@
+// Contact Us form
+.Contact {
+    background-color:$white;
+    & .title {
+        position:relative;
+        margin-bottom:40px;
+        & h2 {
+            margin-bottom:10px;
+        }
+        & p {
+            margin-bottom: 30px;
+        }
+        &:after {
+            content:'';
+            width:50px;
+            height:3px;
+            background-color:$blue;
+            display:block;
+            margin:0 auto;
+        }
+        .ant-form-horizontal  {
+            & .ant-form-item-control {
+                max-width:100%;
+             }
+        }
+    }
+   #login-form {
+       margin:0 auto;
+       max-width:900px;
+
+       & input {
+           border-radius:0px;
+           padding:10px 15px;
+       }
+       & textarea {
+           border-radius: 0px;
+           min-height: 120px;
+           height: 120px;
+           padding:10px 15px;
+       }
+   }
+  
+}
+
+@media only screen and (max-width:$breakpoint-mobile) {
+
+}
